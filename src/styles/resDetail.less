@@ -1,0 +1,103 @@
+@import "./var";
+@import "./mixin";
+
+.resDetail-container {
+  border: 1px solid @border-color-red;
+  height: 100%;
+}
+
+.resDetail-subView {
+  border-bottom: 1px solid @border-color-red;
+}
+
+.resDetail-container .resDetail-subView .resDetail-span {
+  color: @text-yellow;
+  font-size: @text-size-big;
+  margin-left: 0.5rem;
+  text-align: center;
+  margin-top: 0.16rem;
+  margin-bottom: 0.16rem;
+}
+
+.resDetail-tradeCell {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+.resDetail-tradeCell-span1 {
+  color: white;
+  font-size: @text-size-small;
+  text-align: left;
+  margin-left: 0.4rem;
+}
+.resDetail-tradeCell-span2 {
+  color: green;
+  font-size: @text-size-small;
+  text-align: center;
+}
+.resDetail-tradeCell-span3 {
+  color: @text-yellow;
+  font-size: @text-size-small;
+  text-align: right;
+  margin-right: 0.4rem;
+}
+
+.resDetail-subView-container {
+  border-bottom: 1px solid @border-color-red;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+.resDetail-subView-container-sub {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex:1;
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+
+  padding-top:0.16rem;
+  padding-bottom: 0.16rem;
+  border-left: 1px dashed @border-color-red;
+}
+.resDetail-subView-container-sub-cell {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
